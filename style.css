@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(114deg, rgba(89,34,195,1) 0%, rgba(253,137,45,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(239, 230, 230, 0.05);
+    border: 2px solid rgba(252, 252, 252, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 400px;
+    padding: 45px;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.login-container input::placeholder {
+    color: #ffffff;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid rgba(252, 252, 252, 0.4);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: rgba(252, 252, 252, 0.1);
+    border-color: #fff;
+}
+
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #ccc;
+}
+
+.remember-me-container input {
+    margin-right: 5px;
+}
+
+.remember-me-container label {
+    margin: 0;
+}
+
+.login-container p {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.login-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.rodape {
+    padding: 32px;
+    color: #fdfdfd;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.imagem-logo {
+    width: 28%;
+    position: relative;
+    display: flex;
+    margin-bottom: 40%;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .login-container h2 {
+        font-size: 28px;
+    }
+
+    .login-container button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .rodape {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .imagem-logo {
+        width: 50%;
+        margin-bottom: 40%
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 24px;
+    }
+
+    .login-container button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .rodape {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .imagem-logo {
+        width: 60%;
+        margin-bottom: 40%
+    }
+}

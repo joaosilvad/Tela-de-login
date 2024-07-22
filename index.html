@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Loja</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img class="imagem-logo" src="img/logo loja.png" alt="logo">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="remember-me-container">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Lembrar-me</label>
+        </div>
+        <div class="container-senha">   
+        <p>Esqueci minha <a href="/register"><strong>Senha</strong></a></p>
+        <p>Não tem uma conta? <a href="/register"><strong>Registre-se</strong></a></p>
+     </div>
+    </div>
+    <footer class="rodape">
+       <p>copyright © </p>
+    </footer>
+</body>
+</html>
